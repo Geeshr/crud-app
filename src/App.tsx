@@ -2,20 +2,21 @@
 import React from 'react';
 import './App.css';
 
-import AddTask from './components/AddTask';
-import RemoveTask from './components/RemoveTask';
+import Header from './components/Header';
+import TodoBar from './components/TodoBar';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <h1> To do list </h1>
+    <div>
       <div>
-        <AddTask />
-        <RemoveTask />
+        <Header />
       </div>
-
+      <div className="App">
+        <TodoBar />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
