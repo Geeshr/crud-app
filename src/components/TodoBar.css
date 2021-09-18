@@ -1,0 +1,14 @@
+.form {
+    margin: 1%;
+}
+
+.input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.button {
+    border-radius: none;
+}
