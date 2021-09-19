@@ -1,9 +1,10 @@
 import React from 'react';
+import './TodoItem.css';
 
 
 const Todo = (props:any) => {
   return (
-    <div>
+    <div className='todoItem'>
       {props.children}
     </div>
 

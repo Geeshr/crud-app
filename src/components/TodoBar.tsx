@@ -14,9 +14,10 @@ const TodoBar = (props:any) => {
     // eslint-disable-next-line max-len
     // todo ? setTodos((oldArray:any) => [todo, ...oldArray] ) : '';
     todo && setTodos((oldArray:any) => [todo, ...oldArray] );
+    setTodo('');
   };
   return (
-    <div>
+    <div className='todoBody'>
       <form className= 'form' onSubmit={onSubmit}>
         <input
           className='input'

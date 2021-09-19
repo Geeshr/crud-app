@@ -8,14 +8,14 @@ import TodoBar from './components/TodoBar';
 
 const App = () => {
   return (
-    <div>
+    <>
       <div className='title'>
         <Header />
       </div>
-      <div>
+      <div className='todoBar'>
         <TodoBar />
       </div>
-    </div>
+    </>
   );
 };
 

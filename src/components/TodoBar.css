@@ -1,14 +1,26 @@
-.form {
-    margin: 1%;
+.todoBody {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0 5px 10px lightgrey;
+    border-radius: 10px;
+    border-color: lightgray;
+    margin: 2%;
 }
+
 
 .input {
     border-top: none;
     border-left: none;
     border-right: none;
     outline: none;
+    font-size: 25px;
+    border-bottom-color: darkgray;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .button {
-    border-radius: none;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    color: #1a6ff1;
 }
