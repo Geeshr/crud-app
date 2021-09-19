@@ -1,3 +1,19 @@
 body {
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px lightgrey;
+    border-radius: 10px;
+    border-color: lightgray;
+}
+.title {
     margin: 1%;
+    text-align: center;
+}
+
+.todoBar {
+    display: block;
+    text-align: center;
 }

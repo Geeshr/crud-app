@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import TodoList from './TodoList';
 
+import './TodoBar.css';
+
 
 const TodoBar = (props:any) => {
   const [todo, setTodo] = useState('');
@@ -12,14 +14,21 @@ const TodoBar = (props:any) => {
     // eslint-disable-next-line max-len
     // todo ? setTodos((oldArray:any) => [todo, ...oldArray] ) : '';
     todo && setTodos((oldArray:any) => [todo, ...oldArray] );
+    setTodo('');
   };
   return (
-    <div>
-      <form onSubmit={onSubmit}>
-        <input type = "text" value={todo} onChange={(event) => {
-          setTodo(event.target.value);
-        }} />
-        <button type='submit'>Add</button>
+    <div className='todoBody'>
+      <form className= 'form' onSubmit={onSubmit}>
+        <input
+          className='input'
+          type = "text"
+          value={todo}
+          onChange={(event) => {
+            setTodo(event.target.value);
+          }} />
+        <button
+          className ='button'
+          type='submit'>+</button>
       </form>
       <TodoList todos={todos}/>
     </div>

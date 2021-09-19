@@ -1,8 +1,9 @@
 import React from 'react';
+import './Header.css';
 
 const Header = (props:any) => {
   return (
-    <header>New List</header>
+    <header className="header">Todo List</header>
   );
 };
 
