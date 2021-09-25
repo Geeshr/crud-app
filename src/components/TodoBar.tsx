@@ -10,12 +10,17 @@ const TodoBar = (props:any) => {
 
   const onSubmit = (event : any) => {
     event.preventDefault();
-    // if (!todo) return;
-    // eslint-disable-next-line max-len
-    // todo ? setTodos((oldArray:any) => [todo, ...oldArray] ) : '';
+
     todo && setTodos((oldArray:any) => [todo, ...oldArray] );
     setTodo('');
   };
+
+  /* const onRemoveHandler = () => {
+    setTodos((oldArray:any) => {
+      console.log('remove');
+      return oldArray.filter((todo:string) => todo !== todo);
+    });
+  }; */
   return (
     <div className='todoBody'>
       <form className= 'form' onSubmit={onSubmit}>
@@ -30,9 +35,14 @@ const TodoBar = (props:any) => {
           className ='button'
           type='submit'>+</button>
       </form>
-      <TodoList todos={todos}/>
+      <TodoList todos={todos} onRemoveHandler={onSubmit}/>
     </div>
   );
 };
 
 export default TodoBar;
+
+
+// if (!todo) return;
+// eslint-disable-next-line max-len
+// todo ? setTodos((oldArray:any) => [todo, ...oldArray] ) : '';
