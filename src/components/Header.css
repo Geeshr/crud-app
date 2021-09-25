@@ -3,3 +3,11 @@
     font-family: Comic Sans MS, Comic Sans, cursive;
     color: #1a6ff1;
 }
+
+.subTitle{
+    font-size: 15px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #1a6ff1;
+    display: flex;
+    justify-content: flex-end;
+}

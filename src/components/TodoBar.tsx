@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import TodoList from './TodoList';
 
 import './TodoBar.css';
@@ -6,7 +6,17 @@ import './TodoBar.css';
 
 const TodoBar = (props:any) => {
   const [todo, setTodo] = useState('');
-  const [todos, setTodos] = useState([] as any);
+  const [todos, setTodos] = useState(() => {
+    const savedTodos = localStorage.getItem('todos');
+    if (savedTodos) {
+      return JSON.parse(savedTodos);
+    } else {
+      return [];
+    }
+  });
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
 
   const onSubmit = (event : any) => {
     event.preventDefault();
@@ -14,6 +24,7 @@ const TodoBar = (props:any) => {
     todo && setTodos((oldArray:any) => [todo, ...oldArray] );
     setTodo('');
   };
+
 
   /* const onRemoveHandler = () => {
     setTodos((oldArray:any) => {

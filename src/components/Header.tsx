@@ -5,10 +5,12 @@ import Date from './Date';
 
 const Header = (props:any) => {
   return (
-    <div>
+    <>
       <header className="header">Todo List</header>
-      <Date/>
-    </div>
+      <div className="subTitle">
+        <Date />
+      </div>
+    </>
   );
 };
 
