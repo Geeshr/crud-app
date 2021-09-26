@@ -7,9 +7,10 @@ const TodoItem = (props: any) => {
     <div className='todoItem'>
       {props.children}
       <button type='button'
-        onClick={()=> console.log('props', props)}> x</button>
+        onClick={()=> props.onRemoveHandler()}> x</button>
     </div>
   );
 };
 
 export default TodoItem;
+

@@ -4,7 +4,7 @@ import TodoList from './TodoList';
 import './TodoBar.css';
 
 
-const TodoBar = (props:any) => {
+const TodoBar = () => {
   const [todo, setTodo] = useState('');
   const [todos, setTodos] = useState(() => {
     const savedTodos = localStorage.getItem('todos');
@@ -25,13 +25,13 @@ const TodoBar = (props:any) => {
     setTodo('');
   };
 
-
-  /* const onRemoveHandler = () => {
+  const onRemoveHandler = () => {
     setTodos((oldArray:any) => {
       console.log('remove');
       return oldArray.filter((todo:string) => todo !== todo);
     });
-  }; */
+  };
+
   return (
     <div className='todoBody'>
       <form className= 'form' onSubmit={onSubmit}>
@@ -46,7 +46,7 @@ const TodoBar = (props:any) => {
           className ='button'
           type='submit'>+</button>
       </form>
-      <TodoList todos={todos} onRemoveHandler={onSubmit}/>
+      <TodoList todos={todos} onRemoveHandler={onRemoveHandler}/>
     </div>
   );
 };
