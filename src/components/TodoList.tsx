@@ -10,6 +10,7 @@ const TodoList = ({todos, onRemoveHandler}: any) => {
       {todos.map((todo:string, index:number) => {
         return <TodoItem
           key={index}
+          id={index}
           onRemoveHandler={onRemoveHandler}>
           {todo}
         </TodoItem>;

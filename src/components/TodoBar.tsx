@@ -21,15 +21,21 @@ const TodoBar = () => {
   const onSubmit = (event : any) => {
     event.preventDefault();
 
-    todo && setTodos((oldArray:any) => [todo, ...oldArray] );
+    todo && setTodos((prevTodos:any) => [todo, ...prevTodos] );
     setTodo('');
   };
 
-  const onRemoveHandler = () => {
-    setTodos((oldArray:any) => {
-      console.log('remove');
-      return oldArray.filter((todo:string) => todo !== todo);
+  const onRemoveHandler = (id:number) => {
+    setTodos((prevTodos:any) => {
+      const test = prevTodos.filter((t:string, index:number) =>
+        index !== id);
+      return test;
     });
+  };
+
+  const onDeleteAll = () => {
+    setTodos([]);
+    console.log('test');
   };
 
   return (
@@ -45,6 +51,9 @@ const TodoBar = () => {
         <button
           className ='button'
           type='submit'>+</button>
+        <button className='deleteAllButton'
+          type='button'
+          onClick={onDeleteAll}><img src="https://img.icons8.com/material-outlined/24/000000/trash--v1.png"/></button>
       </form>
       <TodoList todos={todos} onRemoveHandler={onRemoveHandler}/>
     </div>
@@ -56,4 +65,5 @@ export default TodoBar;
 
 // if (!todo) return;
 // eslint-disable-next-line max-len
-// todo ? setTodos((oldArray:any) => [todo, ...oldArray] ) : '';
+// todo ? setTodos((prevTodos:any) => [todo, ...prevTodos] ) : '';
+// <img src="https://img.icons8.com/material-outlined/24/000000/trash--v1.png"/>

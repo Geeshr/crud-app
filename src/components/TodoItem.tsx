@@ -6,8 +6,9 @@ const TodoItem = (props: any) => {
   return (
     <div className='todoItem'>
       {props.children}
-      <button type='button'
-        onClick={()=> props.onRemoveHandler()}> x</button>
+      <button className='deleteItemButton'
+        type='button'
+        onClick={()=> props.onRemoveHandler(props.id)}>X</button>
     </div>
   );
 };
