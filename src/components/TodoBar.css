@@ -24,3 +24,9 @@
     font-size: 25px;
     color: #1a6ff1;
 }
+
+.deleteAllButton {
+    border:none;
+    background-color: transparent;
+    float: right;
+}

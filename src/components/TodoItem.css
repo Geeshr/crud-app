@@ -6,3 +6,12 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+.deleteItemButton {
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    color: red;
+    float: right;
+    margin-top: 1%;
+}
