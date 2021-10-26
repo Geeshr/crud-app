@@ -5,6 +5,8 @@
     box-shadow: 0 1px 5px lightblue;
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .deleteItemButton {
@@ -12,6 +14,9 @@
     background-color: transparent;
     font-size: 15px;
     color: red;
-    float: right;
     margin-top: 1%;
+}
+
+.editButton{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
