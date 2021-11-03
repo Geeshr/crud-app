@@ -3,7 +3,6 @@ import TodoItem from './TodoItem';
 
 import './TodoList.css';
 
-
 const TodoList = ({todos, onRemoveHandler}: any) => {
   return (
     <div className='todoList'>
