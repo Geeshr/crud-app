@@ -52,7 +52,7 @@ const TodoBar = () => {
     setTodos(updatedTodos);
   }; */
 
-  const editTodo = (id:number, newTodo:any) => {
+  /* const editTodo = (id:number, newTodo:any) => {
     const editedTodoList = todos.map((todo:any) => {
       if (id === todo.id) {
         return {...todo, newTodo};
@@ -60,7 +60,7 @@ const TodoBar = () => {
       return todo;
     });
     setTodos(editedTodoList);
-  };
+  }; */
 
   return (
     <div className='todoBody'>
@@ -81,8 +81,7 @@ const TodoBar = () => {
       </form>
       <TodoList
         todos={todos}
-        onRemoveHandler={onRemoveHandler}
-        editTodo={editTodo}/>
+        onRemoveHandler={onRemoveHandler}/>
     </div>
   );
 };
