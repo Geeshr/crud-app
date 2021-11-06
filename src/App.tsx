@@ -9,12 +9,15 @@ import TodoBar from './components/TodoBar';
 const App = () => {
   return (
     <>
-      <div className='title'>
-        <Header />
+      <div className='card'>
+        <div className='title'>
+          <Header />
+        </div>
+        <div className='todoBar'>
+          <TodoBar />
+        </div>
       </div>
-      <div className='todoBar'>
-        <TodoBar />
-      </div>
+
     </>
   );
 };

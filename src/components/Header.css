@@ -1,13 +1,13 @@
 .header{
     font-size: 35px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    color: #1a6ff1;
+    font-family: Oswald, sans-serif;
+    color: black;
 }
 
 .subTitle{
     font-size: 15px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    color: #1a6ff1;
+    font-family: Oswald, sans-serif;
+    color: black;
     display: flex;
     justify-content: flex-end;
 }

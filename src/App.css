@@ -1,12 +1,25 @@
+html {
+    height: 100%;
+    background: linear-gradient(
+0deg, rgba(132,206,232,1) 20%, rgba(193,200,228,1) 67%);
+}
+
 body {
     margin-top: 2%;
     margin-left: 25%;
     margin-right: 25%;
-    border: 1px solid;
     padding: 10px;
+    
+
+}
+
+.card {
+    border: 1px solid;
     box-shadow: 5px 10px lightgrey;
     border-radius: 10px;
     border-color: lightgray;
+    background-color: white;
+
 }
 .title {
     margin: 1%;
@@ -17,3 +30,4 @@ body {
     display: block;
     text-align: center;
 }
+

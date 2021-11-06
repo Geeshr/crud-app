@@ -68,6 +68,7 @@ const TodoBar = () => {
         <input
           className='input'
           type = "text"
+          placeholder='Add a Todo...'
           value={todo}
           onChange={(event) => {
             setTodo(event.target.value);
@@ -77,7 +78,7 @@ const TodoBar = () => {
           type='submit'>+</button>
         <button className='deleteAllButton'
           type='button'
-          onClick={onDeleteAll}>Delete All</button>
+          onClick={onDeleteAll}><img src="https://img.icons8.com/material-outlined/24/000000/delete-trash.png"/></button>
       </form>
       <TodoList
         todos={todos}

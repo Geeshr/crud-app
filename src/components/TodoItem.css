@@ -1,22 +1,19 @@
 .todoItem {
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    font-size: 22px;
-    margin: 3px;
-    box-shadow: 0 1px 5px lightblue;
-    padding: 10px;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    margin: 15px;
+    box-shadow: 0 1px 10px lightblue;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
 }
 
+.textWrapper {
+    width: 100%;
+}
 .deleteItemButton {
     border: none;
     background-color: transparent;
     font-size: 15px;
     color: red;
     margin-top: 1%;
-}
-
-.editButton{
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }

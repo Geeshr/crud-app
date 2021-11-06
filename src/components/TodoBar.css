@@ -1,10 +1,10 @@
 .todoBody {
-    border: 1px solid;
     padding: 10px;
-    box-shadow: 0 5px 10px lightgrey;
+    margin: 2%;
+    border: 1px solid;
     border-radius: 10px;
     border-color: lightgray;
-    margin: 2%;
+    background-color: white;
 }
 
 
@@ -15,18 +15,18 @@
     outline: none;
     font-size: 25px;
     border-bottom-color: darkgray;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Oswald, sans-serif;
 }
 
 .button {
     border: none;
     background: transparent;
     font-size: 25px;
-    color: #1a6ff1;
+    color: #09b8f6;
 }
 
 .deleteAllButton {
-    border-radius: 10%;
+    border:none;
     background-color: transparent;
     float: right;
 }
